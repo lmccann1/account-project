@@ -22,6 +22,21 @@ public class Service {
 		
 		return accountsMap.get(accountsToAdd);
 	}
+	public int countFirstName(String compare) {
+		// TODO Auto-generated method stub
+		int counter1 = 0;
+		
+		
+		
+	for(int i=1; i <= accountsMap.size(); i++) {
+		if(accountsMap.get(i).getFirstName().equals(compare)) {
+			counter1++;
+			
+		}
+		
+	}
+		return counter1;
+	}
 
 		
 }
